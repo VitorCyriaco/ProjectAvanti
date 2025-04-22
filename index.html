@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,28 +9,54 @@
         @theme {
             --color-black: #000000;
             --color-white: #FFFFFF;
+            --color-blue: #005CFF;
         }
     </style>
     <title>LP Avanti</title>
 </head>
+
 <body>
-    <!--Promotion header-->
-    <div class="p-2" style="background-color: #005CFF;">
-        <p class="text-white text-center text-sm font-bold">Ganhe <span class="px-1" style="background: #6220C1;">R$10,00</span> de desconto no seu primeiro pedido.
-            Utilize o cupom <span class="font-normal">DESCONTO10</span>
-        </p>
-    </div>
-    <!--Menu and search header-->
-    <div class="shadow-md pb-4 mt-3 bg-white">
-        <div class="flex justify-between items-center px-4 mb-4">
-            <span class="w-1/9"><img src="assets/img/menu.png" alt="menu"></span>
-            <span><img  class="w-3/6 mx-auto" src="assets/img/avanti-logo-black.png" alt="logo-avanti" /></span>
-            <span class="w-1/9 mx-auto"><img src="assets/img/shopping-cart.png" alt="shopping-cart" /></span>
+        <!--Promotion header-->
+        <div class="shadow-md bg-white fixed top-0 left-0 right-0 z-10">
+            <div class="p-2" style="background-color: #005CFF;">
+                <p class="text-white text-center text-sm font-bold">Ganhe <span class="px-1"
+                        style="background: #6220C1;">R$10,00 </span>de desconto no seu primeiro pedido.<br>
+                    Utilize o cupom <span class="font-normal">DESCONTO10</span>
+                </p>
+            </div>
+            <!--Menu and search header-->
+            <div class="pb-4 mt-3 bg-white">
+                <div class="flex justify-between items-center px-4 mb-4">
+                    <span><img src="assets/img/menu.png" alt="menu"></span>
+                    <span><img src="assets/img/avanti-logo-black.png" alt="logo-avanti" /></span>
+                    <span><img src="assets/img/shopping-cart.png" alt="shopping-cart" /></span>
+                </div>
+                <div class="px-3 relative">
+                    <img src="assets/img/search-icon.png" alt="search-icon" class="absolute top-2 right-5" />
+                    <input class="w-full h-9 text-sm pr-10 pl-3 text-black"
+                        style="border: 1px solid #DDDDDD; border-radius: 10px;" type="text"
+                        placeholder="Digite aqui o que você procura" />
+                </div>
+            </div>
         </div>
-        <div class="px-3 relative">
-            <img src="assets/img/search-icon.png" alt="search-icon" class="absolute top-2 right-5" />
-            <input class="w-full h-9 text-sm pr-10 pl-3 text-black" style="border: 1px solid #DDDDDD; border-radius: 10px;" type="text" placeholder="Digite aqui o que você procura" />
+
+        <!--Firt Banner-->
+        <div class="pt-1 flex relative" style="background-color: #E7E7EA;">
+            <div class="w-full pt-[150px] object-cover">
+                <img src="assets/img/first-banner.png" alt="banner">
+            </div>
+            <div class="w-1/2 absolute top-1/5 right-3 pt-[110px]">
+                <h3 class="text-black text-[40px] text-center font-bold">SUPER</h3>
+                <h3 class="text-black text-[40px] text-center font-normal mt-[-20px]">SALE</h3>
+                <p class="font-[12px] text-center text-blue">SELECTED ITEMS UP TO</p>
+                <h3 class="text-[32px] text-center font-bold text-blue">50%OFF</h3>
+            </div>
+            <div class="flex justify-center items-center">
+                <img class="w-1/40 absolute bottom-2 right-13/24" src="assets/img/elipse.svg" alt="elipse">
+                <img class="w-1/40 absolute bottom-2 right-12/24" src="assets/img/elipse.svg" alt="elipse">
+                <img class="w-1/40 absolute bottom-2 right-11/24" src="assets/img/elipse.svg" alt="elipse">
+            </div>
         </div>
-    </div>
 </body>
+
 </html>
