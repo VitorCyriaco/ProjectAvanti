@@ -16,47 +16,126 @@
 </head>
 
 <body>
-        <!--Promotion header-->
-        <div class="shadow-md bg-white fixed top-0 left-0 right-0 z-10">
-            <div class="p-2" style="background-color: #005CFF;">
-                <p class="text-white text-center text-sm font-bold">Ganhe <span class="px-1"
-                        style="background: #6220C1;">R$10,00 </span>de desconto no seu primeiro pedido.<br>
-                    Utilize o cupom <span class="font-normal">DESCONTO10</span>
-                </p>
+    <!--Promotion header-->
+    <div class="shadow-md bg-white fixed top-0 left-0 right-0 z-10">
+        <div class="p-2" style="background-color: #005CFF;">
+            <p class="text-white text-center text-sm font-bold">Ganhe <span class="px-1 mr-1 text-center"
+                    style="background: #6220C1;">R$10,00 </span>de desconto no seu primeiro pedido.<br>
+                Utilize o cupom <span class="font-normal">DESCONTO10</span>
+            </p>
+        </div>
+        <!--Menu and search header-->
+        <div class="pb-4 mt-3 bg-white">
+            <div class="flex justify-between items-center px-4 mb-4">
+                <span><img src="assets/img/menu.png" alt="menu"></span>
+                <span><img src="assets/img/avanti-logo-black.png" alt="logo-avanti" /></span>
+                <span><img src="assets/img/shopping-cart.png" alt="shopping-cart" /></span>
             </div>
-            <!--Menu and search header-->
-            <div class="pb-4 mt-3 bg-white">
-                <div class="flex justify-between items-center px-4 mb-4">
-                    <span><img src="assets/img/menu.png" alt="menu"></span>
-                    <span><img src="assets/img/avanti-logo-black.png" alt="logo-avanti" /></span>
-                    <span><img src="assets/img/shopping-cart.png" alt="shopping-cart" /></span>
-                </div>
-                <div class="px-3 relative">
-                    <img src="assets/img/search-icon.png" alt="search-icon" class="absolute top-2 right-5" />
-                    <input class="w-full h-9 text-sm pr-10 pl-3 text-black"
-                        style="border: 1px solid #DDDDDD; border-radius: 10px;" type="text"
-                        placeholder="Digite aqui o que você procura" />
-                </div>
+            <div class="px-3 relative">
+                <img src="assets/img/search-icon.png" alt="search-icon" class="absolute top-2 right-5" />
+                <input class="w-full h-9 text-sm pr-10 pl-3 text-black"
+                    style="border: 1px solid #DDDDDD; border-radius: 10px;" type="text"
+                    placeholder="Digite aqui o que você procura" />
             </div>
+        </div>
+    </div>
+
+    <!--Firt Banner-->
+    <div class="pt-1 flex relative" style="background-color: #E7E7EA;">
+        <div class="w-full pt-[150px] object-cover">
+            <img src="assets/img/first-banner.png" alt="banner">
+        </div>
+        <div class="w-1/2 absolute top-1/5 right-3 pt-[110px]">
+            <h3 class="text-black text-[40px] text-center font-bold">SUPER</h3>
+            <h3 class="text-black text-[40px] text-center font-normal mt-[-20px]">SALE</h3>
+            <p class="font-[12px] text-center text-blue">SELECTED ITEMS UP TO</p>
+            <h3 class="text-[32px] text-center font-bold text-blue">50%OFF</h3>
+        </div>
+        <div class="flex justify-center items-center">
+            <img class="w-1/40 absolute bottom-2 right-13/24" src="assets/img/elipse.svg" alt="elipse">
+            <img class="w-1/40 absolute bottom-2 right-12/24" src="assets/img/elipse.svg" alt="elipse">
+            <img class="w-1/40 absolute bottom-2 right-11/24" src="assets/img/elipse.svg" alt="elipse">
+        </div>
+    </div>
+
+    <!--Product Cards-->
+    <div class="p-2 relative">
+        <!--Product Cards Header-->
+        <div class="flex justify-between p-2 allign-center">
+            <h2 class="font-[16px] font-bold">Lançamentos</h2>
+            <a class="underline font-bold text-[14px]" href="#">Ver mais</a>
         </div>
 
-        <!--Firt Banner-->
-        <div class="pt-1 flex relative" style="background-color: #E7E7EA;">
-            <div class="w-full pt-[150px] object-cover">
-                <img src="assets/img/first-banner.png" alt="banner">
+        <!--Product Cards Itens-->
+        <div class="flex">
+
+            <!--Product Card Item-->
+            <div class="w-1/2 bg-white border-1 border-[#DDDDDD] rounded-lg shadow-md m-1 pt-3">
+                <div class="relative">
+                    <div class="absolute p-2 rounded-sm left-2" style="background-color: #00264E;">
+                        <p class="text-white text-[10px] font-bold">NOVO</p>
+                    </div>
+                    <img src="assets/img/produto-avanti-Mockup.png" alt="product">
+                </div>
+                <div class="w-full p-1">
+                    <h3 class="w-full text-[14px] capitalize">Lorem ipsum dolor sit amet consectetuer adipiscing elit
+                    </h3>
+                </div>
+                <div class="flex px-1 align-center mt-2">
+                    <div class="w-3/7">
+                        <p class="line-through text-[12px]">R$100,00</p>
+                        <p class="text-[16px] font-bold">R$79,90</p>
+                    </div>
+                    <div class="w-2/5 max-w-[100px] h-3/5 rounded-sm p-1 px-2 ml-2" style="background-color: #5EC0BE;">
+                        <p class="text-center text-white text-[11px] font-bold">20% OFF</p>
+                    </div>
+                </div>
+                <span>
+                    <p class="text-[12px] mx-1 my-1">Ou em até <strong>10x de R$ 7,90</strong></p>
+                </span>
+                <span class="w-full px-2">
+                    <button class="text-white rounded-sm w-9/10 my-1 mb-5 h-1/10" style="background-color: #005CFF;">Comprar</button>
+                </span>
             </div>
-            <div class="w-1/2 absolute top-1/5 right-3 pt-[110px]">
-                <h3 class="text-black text-[40px] text-center font-bold">SUPER</h3>
-                <h3 class="text-black text-[40px] text-center font-normal mt-[-20px]">SALE</h3>
-                <p class="font-[12px] text-center text-blue">SELECTED ITEMS UP TO</p>
-                <h3 class="text-[32px] text-center font-bold text-blue">50%OFF</h3>
+
+            <!--Product Card Item-->
+            <div class="w-1/2 bg-white border-1 border-[#DDDDDD] rounded-lg shadow-md m-1 pt-3">
+                <div class="relative">
+                    <div class="absolute p-2 rounded-sm left-2" style="background-color: #00264E;">
+                        <p class="text-white text-[10px] font-bold">NOVO</p>
+                    </div>
+                    <img src="assets/img/produto-avanti-Mockup.png" alt="product">
+                </div>
+                <div class="w-full p-1">
+                    <h3 class="w-full text-[14px] capitalize">Lorem ipsum dolor sit amet consectetuer adipiscing elit
+                    </h3>
+                </div>
+                <div class="flex px-1 align-center mt-2">
+                    <div class="w-3/7">
+                        <p class="line-through text-[12px]">R$100,00</p>
+                        <p class="text-[16px] font-bold">R$79,90</p>
+                    </div>
+                    <div class="w-2/5 max-w-[100px] h-3/5 rounded-sm p-1 px-2 ml-2" style="background-color: #5EC0BE;">
+                        <p class="text-center text-white text-[11px] font-bold">20% OFF</p>
+                    </div>
+                </div>
+                <span>
+                    <p class="text-[12px] mx-1 my-1">Ou em até <strong>10x de R$ 7,90</strong></p>
+                </span>
+                <span class="w-full px-2">
+                    <button class="text-white rounded-sm w-9/10 my-1 mb-5 h-1/10" style="background-color: #005CFF;">Comprar</button>
+                </span>
             </div>
-            <div class="flex justify-center items-center">
-                <img class="w-1/40 absolute bottom-2 right-13/24" src="assets/img/elipse.svg" alt="elipse">
-                <img class="w-1/40 absolute bottom-2 right-12/24" src="assets/img/elipse.svg" alt="elipse">
-                <img class="w-1/40 absolute bottom-2 right-11/24" src="assets/img/elipse.svg" alt="elipse">
-            </div>
+            
         </div>
+
+        <div class="flex justify-end items-center py-2">
+            <img class="w-1/40 absolute bottom-0 right-13/24" src="assets/img/elipse.svg" alt="elipse">
+            <img class="w-1/40 absolute bottom-0 right-12/24" src="assets/img/elipse.svg" alt="elipse">
+            <img class="w-1/40 absolute bottom-0 right-11/24" src="assets/img/elipse.svg" alt="elipse">
+        </div>
+    </div>
+
 </body>
 
 </html>
