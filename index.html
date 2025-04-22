@@ -4,7 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/styles.css">
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
     <style type="text/tailwindcss">
         @theme {
             --color-black: #000000;
@@ -214,7 +221,7 @@
 
     <!--Fourth Banner-->
     <div class="mt-10">
-        <img src="assets/img/second-banner.png" alt="second-banner">
+        <img src="assets/img/second-banner.png" alt="fourth-banner">
         <div class="mt-8">
             <section class="px-3">
                 <h2 class="text-[24px] font-bold uppercase mb-5">Lorem Ipsum</h2>
@@ -235,6 +242,36 @@
                     </p>
                 </article>
             </section>
+        </div>
+    </div>
+
+    <!--Fifth Banner-->
+    <div class="mt-10 relative">
+        <img class="w-full" src="assets/img/fifth-banner.png" alt="fifth-banner">
+
+        <div class="w-full absolute top-1/2" style="background-color: #005CFF;">
+            <p class="text-center text-[16] text-white font-[600]">Entre em contato conosco e verifique a
+                disponibilidade para sua região!</p>
+        </div>
+    </div>
+
+    <!--Newsletter-->
+    <div class="my-10 mx-5">
+        <h3 class="text-center text-[16px] font-bold">Cadastre-se na nossa <span class="text-blue">newsletter</span>
+        </h3>
+
+        <div class="px-5 py-8 mt-3" style="background-color: #F5F5F5;">
+            <form>
+                    <input class="w-full bg-white mb-5 h-[48px] p-3 rounded-lg" type="text"
+                        placeholder="Digite seu nome">
+                    <input class="w-full bg-white h-[48px] p-3 rounded-lg" type="text" placeholder="Digite seu email">
+                    <span class="flex mt-5 items-center">
+                        <input class="rounded-sm" style="border:1px solid #DDDDDD;" type="checkbox" />
+                        <p class="text-[12px] font-bold ml-2">Estou de acordo com a <span class="underline">
+                                <a href="#">Política de Privacidade</a></span></p>
+                    </span>
+                <button class="w-full h-[48px] text-white rounded-lg mt-5" style="background-color: #005CFF;">Cadastrar</button>
+            </form>
         </div>
     </div>
 </body>
