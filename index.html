@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style type="text/tailwindcss">
+        @theme {
+            --color-black: #000000;
+            --color-white: #FFFFFF;
+        }
+    </style>
+    <title>LP Avanti</title>
+</head>
+<body>
+    <!--Promotion header-->
+    <div class="p-2" style="background-color: #005CFF;">
+        <p class="text-white text-center text-sm font-bold">Ganhe <span class="px-1" style="background: #6220C1;">R$10,00</span> de desconto no seu primeiro pedido.
+            Utilize o cupom <span class="font-normal">DESCONTO10</span>
+        </p>
+    </div>
+    <!--Menu and search header-->
+    <div class="shadow-md pb-4 mt-3 bg-white">
+        <div class="flex justify-between items-center px-4 mb-4">
+            <span class="w-1/9"><img src="assets/img/menu.png" alt="menu"></span>
+            <span><img  class="w-3/6 mx-auto" src="assets/img/avanti-logo-black.png" alt="logo-avanti" /></span>
+            <span class="w-1/9 mx-auto"><img src="assets/img/shopping-cart.png" alt="shopping-cart" /></span>
+        </div>
+        <div class="px-3 relative">
+            <img src="assets/img/search-icon.png" alt="search-icon" class="absolute top-2 right-5" />
+            <input class="w-full h-9 text-sm pr-10 pl-3 text-black" style="border: 1px solid #DDDDDD; border-radius: 10px;" type="text" placeholder="Digite aqui o que você procura" />
+        </div>
+    </div>
+</body>
+</html>
