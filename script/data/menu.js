@@ -10,6 +10,8 @@ const menuItems = [
     {
         name: 'Departamento',
         categories: [
+          ['Categoria', 'Categoria', 'Categoria', 'Categoria', 'Categoria', 'Categoria', 'Categoria'],
+          ['Categoria', 'Categoria', 'Categoria', 'Categoria', 'Categoria', 'Categoria', 'Categoria']
         ]
       },
       {

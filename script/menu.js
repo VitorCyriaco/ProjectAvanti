@@ -6,7 +6,7 @@ menuItems.forEach((dep) => {
   const hasSub = dep.categories.length > 0;
 
   const li = document.createElement("li");
-  li.className = "relative group/sub";
+  li.className = "group/sub";
 
   const a = document.createElement("a");
   a.className = "flex justify-between items-center px-4 py-2 text-sm hover:text-blue hover:font-bold cursor-pointer";
@@ -20,10 +20,10 @@ menuItems.forEach((dep) => {
 
   if (hasSub) {
     const submenu = document.createElement("div");
-    submenu.className = "absolute top-0 left-full bg-transparent w-[700px] h-[360px] hidden group-hover/sub:flex z-30 px-6 py-4";
+    submenu.className = "absolute top-[4.5%] left-[25%] bg-transparent w-[700px] h-[360px] hidden group-hover/sub:flex z-30 px-6 py-4";
     
     const colContainer = document.createElement("div");
-    colContainer.className = "flex";
+    colContainer.className = "flex absolute";
 
     dep.categories.forEach((column) => {
       const ul = document.createElement("ul");
