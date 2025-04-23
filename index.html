@@ -25,25 +25,53 @@
 <body>
     <!--Promotion header-->
     <div class="shadow-md bg-white fixed top-0 left-0 right-0 z-10">
-        <div class="p-2" style="background-color: #005CFF;">
+        <div class="flex p-2 justify-center" style="background-color: #005CFF;">
             <p class="text-white text-center text-sm font-bold">Ganhe <span class="pl-1 w-auto text-center mr-1"
-                    style="background: #6220C1;">R$10,00 </span> de desconto no seu primeiro pedido.<br>
+                    style="background: #6220C1;">R$10,00 </span> de desconto no seu primeiro pedido.
                 Utilize o cupom <span class="font-normal">DESCONTO10</span>
             </p>
         </div>
 
         <!--Menu and search header-->
-        <div class="pb-4 mt-6 bg-white">
+        <div class="pb-4 mt-6 bg-white lg:px-[15%]">
             <div class="flex justify-between items-center px-4 mb-4">
-                <span><img src="assets/img/menu.png" alt="menu"></span>
-                <span><img src="assets/img/avanti-logo-black.png" alt="logo-avanti" /></span>
+                <span class="xl:hidden"><img src="assets/img/menu.png" alt="menu"></span>
+                <span class="xl:w-[15]"><img src="assets/img/avanti-logo-black.png" alt="logo-avanti" /></span>
+
+                <div class="relative hidden w-[60%] xl:block">
+                    <img class="absolute top-3 right-6" src="assets/img/search-icon.png" alt="search-icon" />
+                    <input class="w-full h-10 text-sm pr-10 pl-3 text-black"
+                        style="border: 1px solid #DDDDDD; border-radius: 10px;" type="text"
+                        placeholder="Digite aqui o que você procura" />
+                </div>
+
+                <span class="hidden items-center gap-3 xl:flex ml-[10%]"><img class="h-[24px]"
+                        src="assets/img/user-icon.png" alt="user-icon">
+                    <p class="text-[14px] font-[600]">Olá,<br>Nome cliente!</p>
+                </span>
                 <span><img src="assets/img/shopping-cart.png" alt="shopping-cart" /></span>
             </div>
             <div class="px-3 mt-6 relative">
-                <img src="assets/img/search-icon.png" alt="search-icon" class="absolute top-3 right-7" />
-                <input class="w-full h-10 text-sm pr-10 pl-3 text-black"
+                <img class="absolute top-3 right-7 lg:hidden" src="assets/img/search-icon.png" alt="search-icon" />
+                <input class="w-full h-10 text-sm pr-10 pl-3 text-black xl:hidden"
                     style="border: 1px solid #DDDDDD; border-radius: 10px;" type="text"
                     placeholder="Digite aqui o que você procura" />
+            </div>
+            <div>
+                <ul
+                    class="hidden xl:flex justify-center items-center gap-10 mt-4 lg:gap-5 lg:justify-between lg:items-center">
+                    <li><a class="text-[14px] font-bold flex items-center" href="#"><img
+                                class="hidden h-3 mr-1 xl:block" src="assets/img/menu-icon-xl.png" alt="menu">Todas as
+                            Categorias</a></li>
+                    <li><a class="text-[14px] font-bold" href="#">Departamento</a></li>
+                    <li><a class="text-[14px] font-bold" href="#">Departamento</a></li>
+                    <li><a class="text-[14px] font-bold" href="#">Departamento</a></li>
+                    <li><a class="text-[14px] font-bold" href="#">Departamento</a></li>
+                    <li><a class="text-[14px] font-bold" href="#">Departamento</a></li>
+                    <li><a class="text-[14px] font-bold" href="#">Departamento</a></li>
+                    <li><a class="text-[14px] font-bold" href="#">Departamento</a></li>
+                    <li><a class="text-[14px] font-bold" href="#">Departamento</a></li>
+                </ul>
             </div>
         </div>
     </div>
@@ -51,105 +79,59 @@
     <!--Firt Banner-->
     <div class="pt-1 flex relative" style="background-color: #E7E7EA;">
         <div class="w-full pt-[150px] object-cover">
-            <img src="assets/img/first-banner.png" alt="banner">
+            <img class="ml-[-40%] xl:ml-[15%]" src="assets/img/first-banner.png" alt="banner">
         </div>
-        <div class="w-1/2 absolute top-1/5 right-3 pt-[110px]">
-            <h3 class="text-black text-[40px] text-center font-bold">SUPER</h3>
-            <h3 class="text-black text-[40px] text-center font-normal mt-[-20px]">SALE</h3>
-            <p class="font-[12px] text-center text-blue">SELECTED ITEMS UP TO</p>
-            <h3 class="text-[32px] text-center font-bold text-blue">50%OFF</h3>
+        <div class="w-1/2 absolute top-[20%] right-3 pt-[110px] xl:pt-[150px] xl:right-[6%]">
+            <div class="xl:flex justify-center items-center">
+                <h3 class="text-black text-[40px] text-center font-bold uppercase xl:text-[100px]">SUPER</h3>
+                <h3 class="text-black text-[40px] text-center font-normal mt-[-20px] uppercase xl:mt-0 xl:text-[100px]">
+                    SALE</h3>
+            </div>
+            <p class="font-[12px] text-center text-blue uppercase xl:text-[25px]">Selected items up to</p>
+            <h3 class="text-[32px] text-center font-bold text-blue xl:text-[60px]">50%OFF</h3>
         </div>
-        <div class="flex justify-center items-center">
-            <img class="w-1/40 absolute bottom-2 right-13/24" src="assets/img/elipse.svg" alt="elipse">
-            <img class="w-1/40 absolute bottom-2 right-12/24" src="assets/img/elipse.svg" alt="elipse">
-            <img class="w-1/40 absolute bottom-2 right-11/24" src="assets/img/elipse.svg" alt="elipse">
+        <div class="flex justify-center gap-2 mt-4 xl:hidden">
+            <img class="w-2 absolute bottom-2 right-13/24" src="assets/img/elipse.svg" alt="elipse">
+            <img class="w-2 absolute bottom-2 right-12/24" src="assets/img/elipse.svg" alt="elipse">
+            <img class="w-2 absolute bottom-2 right-11/24" src="assets/img/elipse.svg" alt="elipse">
         </div>
     </div>
 
     <!--Product Cards-->
-    <div class="p-2 relative">
+    <div class="p-2 relative lg:flex-col lg:items-center lg:gap-5 lg:mt-10 lg:px-[15%]">
+        
         <!--Product Cards Header-->
         <div class="flex justify-between p-2 allign-center">
-            <h2 class="font-[16px] font-bold">Lançamentos</h2>
+            <h2 class="font-[16px] font-bold lg:text-[20px]">Lançamentos</h2>
             <a class="underline font-bold text-[14px]" href="#">Ver mais</a>
         </div>
 
         <!--Product Cards Itens-->
-        <div class="flex">
-
-            <!--Product Card Item-->
-            <div class="w-1/2 h-1/2 bg-white border-1 border-[#DDDDDD] rounded-lg shadow-md m-1 py-4">
-                <div class="relative flex justify-center">
-                    <div class="flex absolute px-2 rounded-sm left-2 h-6 items-center" style="background-color: #00264E;">
-                        <p class="text-white text-[10px] font-bold">NOVO</p>
-                    </div>
-                    <img src="assets/img/produto-avanti-Mockup.png" alt="product">
-                </div>
-                <div class="w-full p-1 h-1/5">
-                    <h3 class="w-full text-[14px] capitalize px-1">Lorem ipsum dolor sit amet consectetuer adipiscing elit
-                    </h3>
-                </div>
-                <div class="flex px-1 align-center mt-2 h-1/8">
-                    <div class="w-3/7">
-                        <p class="line-through text-[12px] px-1">R$100,00</p>
-                        <p class="text-[16px] font-bold px-1">R$79,90</p>
-                    </div>
-                    <div class="flex w-auto max-w-[100px] h-5 rounded-sm px-2 ml-2 items-center justify-center" style="background-color: #5EC0BE;">
-                        <p class="text-white text-[11px] font-bold">20% OFF</p>
-                    </div>
-                </div>
-                <span>
-                    <p class="text-[12px] mx-1 my-1 px-1">Ou em até <strong>10x de R$ 7,90</strong></p>
-                </span>
-                <span class="w-full px-2">
-                    <button class="text-white rounded-sm w-9/10 my-1 h-[40px]"
-                        style="background-color: #005CFF;">Comprar</button>
-                </span>
+        <div class="xl:relative">
+            <div id="arrow-left" class="hidden absolute w-[30px] h-[30px] z-2 top-[50%] ml-[-15px] rounded-full items-center justify-center xl:flex circle-arrow">
+                <img src="assets/img/chevron-left.svg" alt="chevron-left">
             </div>
-
-            <!--Product Card Item-->
-            <div class="w-1/2 h-1/2 bg-white border-1 border-[#DDDDDD] rounded-lg shadow-md m-1 py-4">
-                <div class="relative flex justify-center">
-                    <div class="flex absolute px-2 rounded-sm left-2 h-6 items-center" style="background-color: #00264E;">
-                        <p class="text-white text-[10px] font-bold">NOVO</p>
-                    </div>
-                    <img src="assets/img/produto-avanti-Mockup.png" alt="product">
-                </div>
-                <div class="w-full p-1 h-1/5">
-                    <h3 class="w-full text-[14px] capitalize px-1">Lorem ipsum dolor sit amet consectetuer adipiscing elit
-                    </h3>
-                </div>
-                <div class="flex px-1 align-center mt-2 h-1/8">
-                    <div class="w-3/7">
-                        <p class="line-through text-[12px] px-1">R$100,00</p>
-                        <p class="text-[16px] font-bold px-1">R$79,90</p>
-                    </div>
-                    <div class="flex w-auto max-w-[100px] h-5 rounded-sm px-2 ml-2 items-center justify-center" style="background-color: #5EC0BE;">
-                        <p class="text-white text-[11px] font-bold">20% OFF</p>
-                    </div>
-                </div>
-                <span>
-                    <p class="text-[12px] mx-1 my-1 px-1">Ou em até <strong>10x de R$ 7,90</strong></p>
-                </span>
-                <span class="w-full px-2 h-1/8">
-                    <button class="text-white rounded-sm w-9/10 my-1 h-[40px]"
-                        style="background-color: #005CFF;">Comprar</button>
-                </span>
+            <div id="product-card" class="flex gap-4 overflow-x-auto scroll-smooth lg:gap-8"></div>
+            <div id="arrow-right" class="hidden absolute w-[30px] h-[30px] z-2 top-[50%] right-0 mr-[-15px] rounded-full items-center justify-center xl:flex circle-arrow">
+                <img src="assets/img/chevron-right.svg" alt="chevron-right">
             </div>
-
         </div>
 
-        <div class="flex justify-end items-center py-2">
-            <img class="w-1/40 absolute bottom-0 right-13/24" src="assets/img/elipse.svg" alt="elipse">
-            <img class="w-1/40 absolute bottom-0 right-12/24" src="assets/img/elipse.svg" alt="elipse">
-            <img class="w-1/40 absolute bottom-0 right-11/24" src="assets/img/elipse.svg" alt="elipse">
+        <!--Carousel Buttons-->
+        <div class="flex justify-center gap-2 mt-4">
+            <img class="w-2 cursor-pointer elipse" src="assets/img/elipse.svg" data-index="0">
+            <img class="w-2 cursor-pointer elipse" src="assets/img/elipse.svg" data-index="1">
+            <img class="w-2 cursor-pointer elipse lg:hidden" src="assets/img/elipse.svg" data-index="2">
+            <img class="w-2 cursor-pointer elipse lg:hidden" src="assets/img/elipse.svg" data-index="3">
         </div>
     </div>
 
     <!--Second Banner-->
-    <div class="mt-10">
-        <img class="w-full" src="assets/img/second-banner.png" alt="second-banner">
-        <div class="mt-8">
+    <div class="mt-10 lg:px-[18%] lg:flex lg:justify-center lg:items-center">
+        <div class="lg:w-[50%] lg:flex lg:items-center lg:justify-center" style="background-color: #C2C2C2;">
+            <img class="w-full lg:w-full" src="assets/img/second-banner.png" alt="second-banner">
+        </div>
+        <div class="mt-8 lg:ml-5 lg:w-[30%]">
             <section class="px-3">
                 <h2 class="text-[24px] font-bold uppercase mb-5">Lorem Ipsum</h2>
                 <article>
@@ -173,57 +155,66 @@
     </div>
 
     <!--Third Banner-->
-    <div class="mt-10 p-3 py-5 items-center" style="background-color: #DEDEDE;">
-        <img class="w-full" src="assets/img/third-banner.png" alt="third-banner">
-        <h2 class="uppercase font-bold text-[20px] my-5 text-center">Lorem Ipsum</h2>
+    <div class="mt-10 p-3 py-5 items-center lg:px-[18%] lg:flex lg:justify-center lg:items-center"
+        style="background-color: #DEDEDE;">
+        <img class="w-full lg:w-[40%] lg:order-2" src="assets/img/third-banner.png" alt="third-banner">
 
-        <!--List Item-->
-        <div class="flex justify-space-between items-center mb-5">
-            <div class="flex w-[60px] h-[60px] rounded-full mt-2 items-center justify-center"
-                style="background-color: #005CFF;">
-                <img class="w-[30px] h-[30px]" src="assets/img/map-pin.png" alt="">
-            </div>
-            <div class="w-4/5">
-                <p class="text-[13px] font-normal ml-3">
-                    Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-                    Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.
-                </p>
-            </div>
-        </div>
+        <div class="lg:order-1 lg:w-[40%]">
+            <h2 class="uppercase font-bold text-[20px] my-5 text-center">Lorem Ipsum</h2>
 
-        <!--List Item-->
-        <div class="flex justify-space-between items-center mb-5">
-            <div class="flex w-[60px] h-[60px] rounded-full mt-2 items-center justify-center"
-                style="background-color: #005CFF;">
-                <img class="w-[30px] h-[30px]" src="assets/img/map-pin.png" alt="">
+            <!--List Item-->
+            <div class="flex justify-space-between items-center mb-5">
+                <div class="flex w-[60px] h-[60px] rounded-full mt-2 items-center justify-center"
+                    style="background-color: #005CFF;">
+                    <img class="w-[30px] h-[30px]" src="assets/img/map-pin.png" alt="">
+                </div>
+                <div class="w-4/5 lg:w-[71%]">
+                    <p class="text-[13px] font-normal ml-3">
+                        Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus
+                        mus.
+                        Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.
+                    </p>
+                </div>
             </div>
-            <div class="w-4/5">
-                <p class="text-[13px] font-normal ml-3">
-                    Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-                    Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.
-                </p>
-            </div>
-        </div>
 
-        <!--List Item-->
-        <div class="flex justify-space-between items-center mb-5">
-            <div class="flex w-[60px] h-[60px] rounded-full mt-2 items-center justify-center"
-                style="background-color: #005CFF;">
-                <img class="w-[30px] h-[30px]" src="assets/img/map-pin.png" alt="">
+            <!--List Item-->
+            <div class="flex justify-space-between items-center mb-5">
+                <div class="flex w-[60px] h-[60px] rounded-full mt-2 items-center justify-center"
+                    style="background-color: #005CFF;">
+                    <img class="w-[30px] h-[30px]" src="assets/img/map-pin.png" alt="">
+                </div>
+                <div class="w-4/5 lg:w-[71%]">
+                    <p class="text-[13px] font-normal ml-3">
+                        Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus
+                        mus.
+                        Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.
+                    </p>
+                </div>
             </div>
-            <div class="w-4/5">
-                <p class="text-[13px] font-normal ml-3">
-                    Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-                    Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.
-                </p>
+
+            <!--List Item-->
+            <div class="flex justify-space-between items-center mb-5">
+                <div class="flex w-[60px] h-[60px] rounded-full mt-2 items-center justify-center"
+                    style="background-color: #005CFF;">
+                    <img class="w-[30px] h-[30px]" src="assets/img/map-pin.png" alt="">
+                </div>
+                <div class="w-4/5 lg:w-[71%]">
+                    <p class="text-[13px] font-normal ml-3">
+                        Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus
+                        mus.
+                        Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.
+                    </p>
+                </div>
             </div>
         </div>
     </div>
 
     <!--Fourth Banner-->
-    <div class="mt-10">
-        <img class="w-full" src="assets/img/second-banner.png" alt="fourth-banner">
-        <div class="mt-8">
+    <div class="mt-10 lg:px-[18%] lg:flex lg:justify-center lg:items-center">
+        <div class="lg:w-[50%] lg:flex lg:items-center lg:justify-center" style="background-color: #C2C2C2;">
+            <img class="w-full lg:w-full" src="assets/img/second-banner.png" alt="forth-banner">
+        </div>
+        <div class="mt-8 lg:ml-5 lg:w-[30%]">
             <section class="px-3">
                 <h2 class="text-[24px] font-bold uppercase mb-5">Lorem Ipsum</h2>
                 <article>
@@ -248,76 +239,113 @@
 
     <!--Fifth Banner-->
     <div class="mt-10 relative">
-        <img class="w-full" src="assets/img/fifth-banner.png" alt="fifth-banner">
+        <!--Small Screen Img-->
+        <img class="w-full block lg:hidden" src="assets/img/fifth-banner.png" alt="fifth-banner">
+        <!--Large Screen Img-->
+        <img class="w-full hidden lg:block" src="assets/img/fifth-banner-lg.png" alt="fifth-banner">
 
-        <div class="w-full absolute top-1/2" style="background-color: #005CFF;">
-            <p class="text-center text-[16] text-white font-[600]">Entre em contato conosco e verifique a
+        <div class="w-full absolute top-1/2 lg:h-[132px] lg:top-[40%] lg:flex lg:items-center lg:justify-center"
+            style="background-color: #005CFF;">
+            <p class="text-center text-[16] text-white font-[600] lg:text-[30px] lg:font-[400]">Entre em contato conosco
+                e verifique a
                 disponibilidade para sua região!</p>
         </div>
     </div>
 
     <!--Newsletter-->
-    <div class="my-10 mx-5">
-        <h3 class="text-center text-[16px] font-bold">Cadastre-se na nossa <span class="text-blue">newsletter</span>
+    <div class="my-10 mx-5 lg:mx-[15%]">
+        <h3 class="text-center text-[16px] font-bold lg:text-[20px]">
+            Cadastre-se na nossa <span class="text-blue">newsletter</span>
         </h3>
 
-        <div class="px-5 py-8 mt-3" style="background-color: #F5F5F5;">
-            <form>
-                <input class="w-full bg-white mb-5 h-[48px] p-3 rounded-lg" type="text" placeholder="Digite seu nome">
-                <input class="w-full bg-white h-[48px] p-3 rounded-lg" type="text" placeholder="Digite seu email">
-                <span class="flex mt-5 items-center">
-                    <input class="rounded-sm" style="border:1px solid #DDDDDD;" type="checkbox" />
-                    <p class="text-[12px] font-bold ml-2">Estou de acordo com a <span class="underline">
-                            <a href="#">Política de Privacidade</a></span></p>
-                </span>
-                <button class="w-full h-[48px] text-white rounded-lg mt-5"
-                    style="background-color: #005CFF;">Cadastrar</button>
+        <div class="px-5 py-8 mt-3 lg:rounded-lg lg:flex lg:h-[176px] lg:items-center lg:px-[10%] newsletter">
+            <form class="w-full">
+                <div class="flex flex-col lg:flex-row lg:justify-between lg:items-center lg:gap-8 w-full">
+                    <input class="w-full bg-white mb-5 h-[48px] p-3 rounded-lg lg:w-[35%] lg:mb-0" type="text"
+                        placeholder="Digite seu nome">
+                    <input class="w-full bg-white mb-5 h-[48px] p-3 rounded-lg lg:w-[35%] lg:mb-0" type="text"
+                        placeholder="Digite seu email">
+                    <span class="flex items-center mb-5 lg:mb-0 lg:w-[40%]">
+                        <input class="rounded-sm" style="border:1px solid #DDDDDD;" type="checkbox" />
+                        <p class="text-[12px] font-bold ml-2">
+                            Estou de acordo com a <span class="underline">
+                                <a href="#">Política de Privacidade</a>
+                            </span>
+                        </p>
+                    </span>
+                    <button class="w-full h-[48px] text-white rounded-lg lg:w-[15%]" style="background-color: #005CFF;">
+                        Cadastrar
+                    </button>
+                </div>
             </form>
         </div>
     </div>
 
-    <!--Avanti Contacts-->
-    <div class="mt-10 py-10" style="background-color: #F5F5F5;">
-        <div class="flex justify-center">
-            <img src="assets/img/avanti-logo-black.png" alt="">
-        </div>
-        <div class="flex justify-center gap-10 mt-10">
-            <img class="h-6" src="assets/img/instagram-icon.png" alt="instagram-icon">
-            <img class="h-6" src="assets/img/facebook-icon.png" alt="facebook-icon">
-            <img class="h-6" src="assets/img/youtube-icon.png" alt="youtube-icon">
-            <img class="h-6" src="assets/img/tiktok-icon.png" alt="tiktok-icon">
-        </div>
-
-        <div class="mt-10">
-            <div class="py-5" <div class="px-5" style="border-top: 1px solid #DDDDDD;">
-                <div class="flex justify-between items-center px-5">
-                    <h5 class="text-[16px] font-bold">Institucional</h5>
-                    <img class="w-3 h-2" src="assets/img/chevron-down.png" alt="chevron-down">
+    <footer>
+        <!--Avanti Contacts-->
+        <div class="mt-10 py-10 lg:flex lg:px-[15%] lg:py-15 contacts">
+            <div class="lg:flex-col lg:items-center">
+                <div class="flex justify-center">
+                    <img src="assets/img/avanti-logo-black.png" alt="avanti-logo">
+                </div>
+                <div class="flex justify-center gap-10 mt-10">
+                    <img class="h-6" src="assets/img/instagram-icon.png" alt="instagram-icon">
+                    <img class="h-6" src="assets/img/facebook-icon.png" alt="facebook-icon">
+                    <img class="h-6" src="assets/img/youtube-icon.png" alt="youtube-icon">
+                    <img class="h-6" src="assets/img/tiktok-icon.png" alt="tiktok-icon">
                 </div>
             </div>
-        </div>
 
-        <div>
-            <div class="py-5" <div class="px-5" style="border-top: 1px solid #DDDDDD;">
-                <div class="flex justify-between items-center px-5">
-                    <h5 class="text-[16px] font-bold">Central de Ajuda</h5>
-                    <img class="w-3 h-2" src="assets/img/chevron-down.png" alt="chevron-down">
+            <div class="lg:grid lg:grid-cols-3 lg:ml-[15%]">
+
+                <div class="mt-10 lg:mt-0">
+                    <div class="py-5 px-5 lg:py-0 contacts-links">
+                        <div class="flex justify-between items-center px-5 lg:px-0">
+                            <h4 class="text-[16px] font-bold">Institucional</h4>
+                            <img class="w-3 h-2 lg:hidden" src="assets/img/chevron-down.png" alt="chevron-down">
+                        </div>
+                        <div class="hidden lg:flex flex-col gap-2 mt-3">
+                            <h5><a href="#">Sobre Nós</a></h5>
+                            <h5><a href="#">Nossas Lojas</a></h5>
+                            <h5><a href="#">Privacidade e Segurança</a></h5>
+                            <h5><a href="#">Termos e Condições</a></h5>
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </div>
 
-        <div>
-            <div class="py-5" <div class="px-5"
-                style="border-top: 1px solid #DDDDDD; border-bottom: 1px solid #DDDDDD;">
-                <div class="flex justify-between items-center px-5">
-                    <h5 class="text-[16px] font-bold">Atendimento</h5>
-                    <img class="w-3 h-2" src="assets/img/chevron-down.png" alt="chevron-down">
+                <div>
+                    <div class="py-5 px-5 lg:py-0 contacts-links">
+                        <div class="flex justify-between items-center px-5 lg:px-0">
+                            <h4 class="text-[16px] font-bold">Central de Ajuda</h4>
+                            <img class="w-3 h-2 lg:hidden" src="assets/img/chevron-down.png" alt="chevron-down">
+                        </div>
+                        <div class="hidden lg:flex flex-col gap-2 mt-3">
+                            <h5><a href="#">Fale Conosco</a></h5>
+                            <h5><a href="#">Frete e Entrega</a></h5>
+                            <h5><a href="#">Trocas e Devoluções</a></h5>
+                            <h5><a href="#">Formas de Pagamento</a></h5>
+                            <h5><a href="#">FAQ</a></h5>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="py-5 px-5 lg:py-0 contacts-links last-contact-link">
+                    <div class="flex justify-between items-center px-5 lg:px-0">
+                        <h4 class="text-[16px] font-bold">Atendimento</h4>
+                        <img class="w-3 h-2 lg:hidden" src="assets/img/chevron-down.png" alt="chevron-down">
+                    </div>
+                    <div class="hidden lg:flex flex-col gap-2 mt-3">
+                        <h5><strong>Telefone: </strong>(00)1234-5678</h5>
+                        <h5><strong>E-mail: </strong>exemplo@exemplo.com.br</h5>
+                        <h5><strong>Horário de atendimento: </strong><br>Segunda a Sábado: 07h00 às 23h00<br>Domingos e
+                            Feriados: 07h00 às 21h00</h5>
+                    </div>
                 </div>
             </div>
         </div>
 
         <!--Payment Cards-->
-        <div class="flex justify-center items-center mt-10 gap-8 flex-wrap px-5">
+        <div class="flex justify-center items-center mt-10 gap-8 flex-wrap px-5 lg:mt-0 lg:py-10 payments">
             <img class="h-5" src="assets/img/amex-icon.png" alt="amex-icon">
             <img class="h-4" src="assets/img/mastercard-icon.png" alt="mastercard-icon">
             <img class="h-3" src="assets/img/visa-icon.png" alt="visa-icon">
@@ -328,25 +356,42 @@
             <img class="h-5" src="assets/img/pix-icon.png" alt="pix-icon">
             <img class="h-5" src="assets/img/ticket-icon.png" alt="ticket-icon">
         </div>
-    </div>
 
-    <!--Footer Text-->
-    <div class="mt-10">
-        <article>
-            <p class="text-[12px] font-normal px-2 text-center">
-                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut
-                laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci.
-            </p>
-        </article>
-    </div>
+        <!--Footer Text-->
+        <div class="mt-10">
+            <article>
+                <!--Footer Text Small Screen-->
+                <p class="text-[12px] font-normal px-2 text-center">
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
+                    tincidunt ut
+                    laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud
+                    exerci.
+                </p>
 
-    <!--Footer Info Images-->
-    <div class="flex justify-center items-center gap-5 mt-10 mb-10 flex-wrap">
-        <img src="assets/img/lets-encypt-icon.png" alt="">
-        <img src="assets/img/vtex-icon.png" alt="">
-        <img src="assets/img/avanti-footer-icon.png" alt="">
-        <img src="assets/img/vtex.png" alt="">
-    </div>
+                <!--Footer Text Large Screen-->
+                <p class=" hidden lg:block text-[12px] font-normal px-[15%] text-center">
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut
+                    laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
+                    ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure
+                    dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla
+                    facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril
+                    delenit augue duis dolore te feugait nulla facilisi.
+                </p>
+            </article>
+        </div>
+
+        <!--Footer Info Images-->
+        <div class="flex justify-center items-center gap-5 mt-10 mb-10 flex-wrap">
+            <img src="assets/img/lets-encypt-icon.png" alt="">
+            <img src="assets/img/vtex-icon.png" alt="">
+            <img src="assets/img/avanti-footer-icon.png" alt="">
+            <img src="assets/img/vtex.png" alt="">
+        </div>
+
+    </footer>
+
+    <script type="module" src="script/products.js"></script>
+    <script src="script/script.js"></script>
 </body>
 
 </html>
