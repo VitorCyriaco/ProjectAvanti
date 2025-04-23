@@ -58,19 +58,17 @@
                     placeholder="Digite aqui o que você procura" />
             </div>
             <div>
-                <ul
-                    class="hidden xl:flex justify-center items-center gap-10 mt-4 lg:gap-5 lg:justify-between lg:items-center">
-                    <li><a class="text-[14px] font-bold flex items-center" href="#"><img
-                                class="hidden h-3 mr-1 xl:block" src="assets/img/menu-icon-xl.png" alt="menu">Todas as
-                            Categorias</a></li>
-                    <li><a class="text-[14px] font-bold" href="#">Departamento</a></li>
-                    <li><a class="text-[14px] font-bold" href="#">Departamento</a></li>
-                    <li><a class="text-[14px] font-bold" href="#">Departamento</a></li>
-                    <li><a class="text-[14px] font-bold" href="#">Departamento</a></li>
-                    <li><a class="text-[14px] font-bold" href="#">Departamento</a></li>
-                    <li><a class="text-[14px] font-bold" href="#">Departamento</a></li>
-                    <li><a class="text-[14px] font-bold" href="#">Departamento</a></li>
-                    <li><a class="text-[14px] font-bold" href="#">Departamento</a></li>
+                <ul class="hidden xl:flex justify-center items-center gap-10 mt-4 lg:gap-5 lg:justify-between lg:items-center">
+                    <ul id="all-categories" class="flex gap-4"></ul>
+                    </li>
+                    <li><a class="text-[14px] font-bold hover:text-blue" href="#">Departamento</a></li>
+                    <li><a class="text-[14px] font-bold hover:text-blue" href="#">Departamento</a></li>
+                    <li><a class="text-[14px] font-bold hover:text-blue" href="#">Departamento</a></li>
+                    <li><a class="text-[14px] font-bold hover:text-blue" href="#">Departamento</a></li>
+                    <li><a class="text-[14px] font-bold hover:text-blue" href="#">Departamento</a></li>
+                    <li><a class="text-[14px] font-bold hover:text-blue" href="#">Departamento</a></li>
+                    <li><a class="text-[14px] font-bold hover:text-blue" href="#">Departamento</a></li>
+                    <li><a class="text-[14px] font-bold hover:text-blue" href="#">Departamento</a></li>
                 </ul>
             </div>
         </div>
@@ -99,7 +97,7 @@
 
     <!--Product Cards-->
     <div class="p-2 relative lg:flex-col lg:items-center lg:gap-5 lg:mt-10 lg:px-[15%]">
-        
+
         <!--Product Cards Header-->
         <div class="flex justify-between p-2 allign-center">
             <h2 class="font-[16px] font-bold lg:text-[20px]">Lançamentos</h2>
@@ -108,11 +106,13 @@
 
         <!--Product Cards Itens-->
         <div class="xl:relative">
-            <div id="arrow-left" class="hidden absolute w-[30px] h-[30px] z-2 top-[50%] ml-[-15px] rounded-full items-center justify-center xl:flex circle-arrow">
+            <div id="arrow-left"
+                class="hidden absolute w-[30px] h-[30px] z-2 top-[50%] ml-[-15px] rounded-full items-center justify-center xl:flex circle-arrow">
                 <img src="assets/img/chevron-left.svg" alt="chevron-left">
             </div>
             <div id="product-card" class="flex gap-4 overflow-x-auto scroll-smooth lg:gap-8"></div>
-            <div id="arrow-right" class="hidden absolute w-[30px] h-[30px] z-2 top-[50%] right-0 mr-[-15px] rounded-full items-center justify-center xl:flex circle-arrow">
+            <div id="arrow-right"
+                class="hidden absolute w-[30px] h-[30px] z-2 top-[50%] right-0 mr-[-15px] rounded-full items-center justify-center xl:flex circle-arrow">
                 <img src="assets/img/chevron-right.svg" alt="chevron-right">
             </div>
         </div>
