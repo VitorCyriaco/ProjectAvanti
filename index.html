@@ -284,7 +284,7 @@
 
     <footer>
         <!--Avanti Contacts-->
-        <div class="mt-10 py-10 lg:flex lg:px-[15%] lg:py-15 contacts">
+        <div class="mt-10 py-10 xl:flex xl:px-[15%] xl:py-15 contacts">
             <div class="lg:flex-col lg:items-center">
                 <div class="flex justify-center">
                     <img src="assets/img/avanti-logo-black.png" alt="avanti-logo">
@@ -300,12 +300,12 @@
             <div class="xl:grid xl:grid-cols-3 xl:ml-[10%] 2xl:ml-[15%]">
 
                 <div class="mt-10 lg:mt-0">
-                    <div class="py-5 px-5 lg:py-0 lg:px-0 contacts-links">
-                        <div class="flex justify-between items-center px-5 lg:px-0">
+                    <div class="py-5 px-5 xl:py-0 xl:px-0 contacts-links">
+                        <div class="flex justify-between items-center px-5 xl:px-0" data-toggle="about">
                             <h4 class="text-[16px] font-bold">Institucional</h4>
                             <img class="w-3 h-2 lg:hidden" src="assets/img/chevron-down.png" alt="chevron-down">
                         </div>
-                        <div class="hidden lg:flex flex-col gap-2 mt-3">
+                        <div class="hidden px-5 flex-col gap-2 mt-3 xl:px-0 xl:flex collapsible-content" data-id="about">
                             <h5><a href="#">Sobre Nós</a></h5>
                             <h5><a href="#">Nossas Lojas</a></h5>
                             <h5><a href="#">Privacidade e Segurança</a></h5>
@@ -315,12 +315,12 @@
                 </div>
 
                 <div>
-                    <div class="py-5 px-5 lg:py-0 lg:px-0 contacts-links">
-                        <div class="flex justify-between items-center px-5 lg:px-0">
+                    <div class="py-5 px-5 xl:py-0 xl:px-0 contacts-links">
+                        <div class="flex justify-between items-center px-5 xl:px-0" data-toggle="help">
                             <h4 class="text-[16px] font-bold">Central de Ajuda</h4>
                             <img class="w-3 h-2 lg:hidden" src="assets/img/chevron-down.png" alt="chevron-down">
                         </div>
-                        <div class="hidden lg:flex flex-col gap-2 mt-3">
+                        <div class="hidden px-5 flex-col gap-2 mt-3 xl:px-0 xl:flex collapsible-content" data-id="help">
                             <h5><a href="#">Fale Conosco</a></h5>
                             <h5><a href="#">Frete e Entrega</a></h5>
                             <h5><a href="#">Trocas e Devoluções</a></h5>
@@ -330,12 +330,12 @@
                     </div>
                 </div>
 
-                <div class="py-5 px-5 lg:py-0 lg:px-0 contacts-links last-contact-link">
-                    <div class="flex justify-between items-center px-5 lg:px-0">
+                <div class="py-5 px-5 xl:py-0 xl:px-0 contacts-links last-contact-link">
+                    <div class="flex justify-between items-center px-5 xl:px-0" data-toggle="support">
                         <h4 class="text-[16px] font-bold">Atendimento</h4>
                         <img class="w-3 h-2 lg:hidden" src="assets/img/chevron-down.png" alt="chevron-down">
                     </div>
-                    <div class="hidden lg:flex flex-col gap-2 mt-3">
+                    <div class="hidden px-5 flex-col gap-2 mt-3 xl:px-0 xl:flex collapsible-content" data-id="support">
                         <h5><strong>Telefone: </strong>(00)1234-5678</h5>
                         <h5><strong>E-mail: </strong>exemplo@exemplo.com.br</h5>
                         <h5><strong>Horário de atendimento: </strong><br>Segunda a Sábado: 07h00 às 23h00<br>Domingos e
@@ -393,6 +393,7 @@
 
     <script type="module" src="script/products.js"></script>
     <script src="script/script.js"></script>
+    <script type="module" src="script/menu.js"></script>
 </body>
 
 </html>
