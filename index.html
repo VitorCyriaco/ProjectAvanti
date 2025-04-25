@@ -40,7 +40,7 @@
 
                 <div class="relative hidden w-[60%] xl:block">
                     <img class="absolute top-3 right-6" src="assets/img/search-icon.png" alt="search-icon" />
-                    <input class="w-full h-10 text-sm pr-10 pl-3 text-black"
+                    <input id="search-input-desktop" class="w-full h-10 text-sm pr-10 pl-3 text-black"
                         style="border: 1px solid #DDDDDD; border-radius: 10px;" type="text"
                         placeholder="Digite aqui o que você procura" />
                 </div>
@@ -53,15 +53,17 @@
             </div>
             <div class="px-3 mt-6 relative">
                 <img class="absolute top-3 right-7 lg:hidden" src="assets/img/search-icon.png" alt="search-icon" />
-                <input class="w-full h-10 text-sm pr-10 pl-3 text-black xl:hidden"
+                <input id="search-input-mobile" class="w-full h-10 text-sm pr-10 pl-3 text-black xl:hidden"
                     style="border: 1px solid #DDDDDD; border-radius: 10px;" type="text"
                     placeholder="Digite aqui o que você procura" />
+            </div>
+            <div id="search-dropdown" class="absolute w-full bg-white border border-gray-300 rounded-md shadow-md mt-1 hidden z-10 p-2 text-sm text-gray-700">
             </div>
             <div>
                 <ul
                     class="hidden xl:flex justify-center items-center gap-10 mt-4 lg:gap-5 lg:justify-between lg:items-center">
-                    <ul id="all-categories" class="flex gap-4"></ul>
-                    <ul id="departments-menu" class="flex gap-4"></ul>
+                    <li><ul id="all-categories" class="flex gap-4"></ul></li>
+                    <li><ul id="departments-menu" class="flex gap-4"></ul></li>
                     <li><a class="text-[14px] font-bold hover:text-blue" href="#">Departamento</a></li>
                     <li><a class="text-[14px] font-bold hover:text-blue" href="#">Departamento</a></li>
                     <li><a class="text-[14px] font-bold hover:text-blue" href="#">Departamento</a></li>
@@ -393,6 +395,7 @@
 
     <script type="module" src="script/products.js"></script>
     <script src="script/script.js"></script>
+    <script src="script/searchBar.js"></script>
     <script type="module" src="script/menu.js"></script>
 </body>
 

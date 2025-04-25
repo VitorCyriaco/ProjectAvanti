@@ -13,6 +13,7 @@
     transition: opacity 0.3s;
 }
 
+
 .elipse.active {
     opacity: 1;
 }
